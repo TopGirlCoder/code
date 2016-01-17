@@ -2,7 +2,7 @@
 <h2>Code projects in Rails, Sinatra, Ruby, JavaScript, Java, C++, Python</h2><br>
 <p><i>"By sharing code we can create better, more reliable software."</i> - GitHub</p><br> 
 <p>Tanya Lindermeier, Software Developer</p><br>
-<p>I'm a software developer with two years of strong CS fundamentals from the University of Colorado and am a recent graduate of Dev Bootcamp in San Francisco. Dev Bootcamp is a 19-week long accelerated coding bootcamp that is totally immersive in Rails, Sinatra, Ruby, and JavaScript.</p>  
+<p>Ruby Developer looking to join a team creating amazing products at an innovation-led, technology-driven company.  Recent graduate of Dev Bootcamp with two years of strong CS fundamentals at the University of Colorado (3.85 GPA). </p>  
 
 <h3>Projects in Rails, Sinatra, Ruby, JavaScript, HTML5, CSS</h3>
 <h4>Rails:</h4>

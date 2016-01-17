@@ -1,4 +1,4 @@
-// Tanya Rose
+// Tanya Lindermeier
 //FILENAME: BigNum.cxx
 // This is the implementation file of the BigNum class
 
