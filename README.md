@@ -20,5 +20,5 @@
 
 <h4>Python:</h4>
 <ul>
-	<li><a href="python/creature.py">Animated geometric shapes suspended by balloons</a></li>
+	<li><a href="python/creature.py">Geometric shapes suspended by balloons</a></li>
 </ul>
