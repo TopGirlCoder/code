@@ -16,6 +16,7 @@
 <ul>
 	<li><a href="cPlusPlus/DoublyLinkedList">Doubly linked list polynomial</a></li>
 	<li><a href="cPlusPlus/BinarySearchTreeBag">Binary search tree and recursive algorithms for processing items</a></li>	
+	<li><a href="cPlusPlus/BigNum">BigNum to circumvent the limit of how large an integer one can represent with C++'s primitive types.</a></li>
 </ul>
 
 <h4>Python:</h4>
