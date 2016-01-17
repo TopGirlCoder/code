@@ -9,7 +9,8 @@
 
 <h4>C++:</h4>
 <ul>
-	<li><a href="c++/">Binary search tree and recursive algorithms for processing items</a></li>
+	<li><a href="c++/doubly_linked_list">Doubly linked list polynomial</a></li>
+	<li><a href="c++/">Binary search tree and recursive algorithms for processing items</a></li>	
 </ul>
 
 <h4>Python:</h4>
