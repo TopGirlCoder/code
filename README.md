@@ -2,12 +2,15 @@
 <h2>Code projects in Rails, Ruby, JavaScript, Java, C++, Python</h2><br>
 <p><i>"By sharing code we can create better, more reliable software."</i> - GitHub</p><br> 
 <p>Tanya Lindermeier</p>
-<p>Ruby Developer</p> 
-<p>San Francisco Bay Area</p> 
-<p>Email: topgirlcoder(at)gmail(dot)com
+<p>Software Developer</p><br> 
 
 
+<h4>Java:</h4>
 
+<h4>C++:</h4>
+<ul>
+	<li><a href="c++/">Binary search tree and recursive algorithms for processing items</a></li>
+</ul>
 
 <h4>Python:</h4>
 <ul>
