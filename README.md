@@ -1,10 +1,11 @@
 # code
-<h2>Projects in Rails, Ruby, JavaScript, Java, C++, Python</h2>
+<h2>Code projects in Rails, Ruby, JavaScript, Java, C++, Python</h2>
 <p>Tanya Lindermeier</p>
-<p>Ruby Developer in the San Francisco Bay Area</p> 
+<p>Ruby Developer</p> 
+<p>San Francisco Bay Area</p> 
 <p>Email: topgirlcoder(at)gmail(dot)com
 
-<p><i>"By sharing code we can create better, more reliable software."</i> - GitHub</p><br> 
+<p style="text-align: center"><i>"By sharing code we can create better, more reliable software."</i> - GitHub</p><br> 
 
 <h4>Python:</h4>
 <ul>
