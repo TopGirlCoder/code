@@ -1,5 +1,5 @@
 # code
-<p>Projects in Rails, Ruby, JavaScript, Java, C++, Python</p>
+<h2>Projects in Rails, Ruby, JavaScript, Java, C++, Python</h2>
 <p>Tanya Lindermeier</p>
 <p>Ruby Developer in the San Francisco Bay Area</p> 
 <p>Email: topgirlcoder(at)gmail(dot)com
