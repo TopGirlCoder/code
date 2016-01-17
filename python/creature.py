@@ -1,14 +1,14 @@
-# Assignment: <Assignment 2, Creature>, File name: <creature.py> 
+# Assignment: <Assignment 1, Creature>, File name: <creature.py> 
 # Author: <Tanya Lindermeier>
 # Collaboration: <Independent>
 # Resources: <CSCI 1300 class slides, Python Programming by Zelle>
 #
-# Comments: Why a caterpillar? <Creating a caterpillar was fun! I was able to use 
-# various sizes and colors of shapes such as, circles, ovals, and 
-# rectangles. The caterpillar was drawn with balloons, a metaphor
-# for expected flight to come as the caterpillar metamorphoses 
-# into a butterfly. Additionally, a platform was made where hexagons and 
-# triangles were fitted tightly together.>
+# Comments: My first coding project. Why a caterpillar? <Creating a 
+# caterpillar was fun! I was able to use various sizes and colors of 
+# shapes such as, circles, ovals, and rectangles. The caterpillar was 
+# drawn with balloons, a metaphor for expected flight to come as the 
+# caterpillar metamorphoses into a butterfly. Additionally, a platform 
+# was made where hexagons and triangles were fitted tightly together.>
 #
 # Bonus: <Additional shape: golden filled stars with yellow outline>
 
@@ -42,23 +42,23 @@ def creature():
 	head.setOutline("blue") # outlines the head with blue
 	head.draw(win) # draws the head
 	
-	eye1 = Circle(Point(265, 412), 11) # (center, radius) of eye1
-	eye1.setFill("yellow") # fills eye1 with yellow color
-	eye1.setOutline("purple") # outlines eye1 with purple
-	eye1.draw(win) # draws eye1
+	# eye1 = Circle(Point(265, 418), 12) # (center, radius) of eye1
+	# eye1.setFill("yellow") # fills eye1 with yellow color
+	# eye1.setOutline("blue") # outlines eye1 with purple
+	# eye1.draw(win) # draws eye1
 	
-	inner_eye1 = Circle(Point(265, 412), 8) # (center, radius) of inner_eye1
-	inner_eye1.setFill("black") # fills the inner_eye1 with black color
-	inner_eye1.draw(win) # draws inner_eye1
+	# inner_eye1 = Circle(Point(265, 418), 10) # (center, radius) of inner_eye1
+	# inner_eye1.setFill("black") # fills the inner_eye1 with black color
+	# inner_eye1.draw(win) # draws inner_eye1
 	
-	eye2 = Circle(Point(293, 412), 11) # (center, radius) of eye2
-	eye2.setFill("yellow") # fills eye2 with yellow color
-	eye2.setOutline("purple") # outlines eye2 with purple color
-	eye2.draw(win) # draws eye2
+	# eye2 = Circle(Point(293, 418), 12) # (center, radius) of eye2
+	# eye2.setFill("yellow") # fills eye2 with yellow color
+	# eye2.setOutline("blue") # outlines eye2 with purple color
+	# eye2.draw(win) # draws eye2
 	
-	inner_eye2 = Circle(Point(293, 412), 8) # (center, radius) of inner_eye2
-	inner_eye2.setFill("black") # fills inner_eye2 with black color
-	inner_eye2.draw(win) # draws inner_eye2
+	# inner_eye2 = Circle(Point(293, 418), 10) # (center, radius) of inner_eye2
+	# inner_eye2.setFill("black") # fills inner_eye2 with black color
+	# inner_eye2.draw(win) # draws inner_eye2
 	
 	lower_antenna1 = Rectangle(Point(266, 380), Point(268, 360)) # dimensions of the 1st lower antenna
 	lower_antenna1.setFill("purple") # fill with purple color
@@ -108,9 +108,9 @@ def creature():
 	foot4.setFill("black") # fill with black color
 	foot4.draw(win) # draw foot 4
 	
-	mouth = Oval(Point(274,434), Point(286,446)) # dimensions of the mouth
-	mouth.setFill("black") # fills the oval with black
-	mouth.draw(win) # draws the mouth
+	# mouth = Oval(Point(278,437), Point(282,441)) # dimensions of the mouth
+	# mouth.setFill("black") # fills the oval with black
+	# mouth.draw(win) # draws the mouth 
 	
 	balloonstring3 = Rectangle(Point(405, 250), Point(405, 412)) # dimensions of the balloonstring3
 	balloonstring3.setOutline("yellow") # outlines with yellow color
