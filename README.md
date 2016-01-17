@@ -7,7 +7,9 @@
 <p>Email: topgirlcoder(at)gmail(dot)com
 
 
+
+
 <h4>Python:</h4>
 <ul>
-	<li><a href="python/creature.py">Creature: An animated geometric caterpillar suspended by balloons</a></li>
+	<li><a href="python/creature.py">Animated geometric shapes suspended by balloons</a></li>
 </ul>
