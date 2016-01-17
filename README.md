@@ -14,8 +14,8 @@
 
 <h4>C++:</h4>
 <ul>
-	<li><a href="c++/DoublyLinkedList">Doubly linked list polynomial</a></li>
-	<li><a href="c++/BinarySearchTreeBag">Binary search tree and recursive algorithms for processing items</a></li>	
+	<li><a href="cPlusPlus/DoublyLinkedList">Doubly linked list polynomial</a></li>
+	<li><a href="cPlusPlus/BinarySearchTreeBag">Binary search tree and recursive algorithms for processing items</a></li>	
 </ul>
 
 <h4>Python:</h4>
