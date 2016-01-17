@@ -1,4 +1,4 @@
-// Tanya Rose
+// Tanya Lindermeier
 //FILE: BSTreeBag6.h (part of the namespace main_savitch_10)
 // TEMPLATE CLASS PROVIDED: BSTreeBag<ItemType>
 //     (a container template class for a collection of items)
