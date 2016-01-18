@@ -9,6 +9,7 @@
 var player = {
 	card: 0,
 	wins: 0,
+	losses: 0,
 	success: false,
 
 	guess: function(direction) {
@@ -24,12 +25,15 @@ var player = {
 		//Let player know if the guess is the magician
 		if(player.card === magician.card){
 			console.log("Player guessed correctly - player wins!");
+			console.log("");
 			player.success = true;
 			player.wins += 1;
 		}
 		else{
-			console.log("Sorry guess again. The magician's card is " + magician.card); 
+			console.log("The magician's card is " + magician.card + ". Player loses."); 
+			console.log("");
 			player.success = false;
+			player.losses += 1;
 		}
 	}
 };
@@ -46,4 +50,5 @@ player.guess(1);
 player.guess(5);
 player.guess(3);
 player.guess(9);
-console.log(player.wins);
+console.log("Player won " + player.wins + " games.");
+console.log("Player lost " + player.losses + " games.");
