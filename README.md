@@ -14,6 +14,9 @@
 </ul>
 
 <h4>JavaScript:</h4>
+<ul>
+	<li><a href="javaScript/magician">Guess the Magician's Card.</a></li>
+</ul>
 
 <h3>Projects in Java, C++, and Python</h3>
 <h4>Java:</h4>
