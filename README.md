@@ -1,8 +1,10 @@
 # code
 <h2>Code projects in Rails, Sinatra, Ruby, JavaScript, Java, C++, Python</h2><br>
 <p><i>"By sharing code we can create better, more reliable software."</i> - GitHub</p><br> 
-<p>Tanya Lindermeier</p>
-<p>Ruby Developer looking to join a team creating amazing products at an innovation-led, technology-driven company.  Recent graduate of Dev Bootcamp with two years of strong CS fundamentals at the University of Colorado (3.85 GPA). </p>  
+<p>Tanya Lindermeier is a Ruby Developer looking to join a team creating amazing products at an innovation-led, technology-driven company.  Recent graduate of Dev Bootcamp in San Francisco with two years of strong CS fundamentals at the University of Colorado (3.85 GPA). </p>  
+<p>Email: topgirlcoder (at) gmail(dot)com</p>
+<p>Linkedin: www.linkedin.com/in/topgirlcoder</p> 
+<p>GitHub: github.com/TopGirlCoder/code</p>
 
 <h3>Projects in Rails, Sinatra, Ruby, JavaScript, HTML5, CSS</h3>
 <h4>Rails:</h4>
