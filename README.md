@@ -10,7 +10,7 @@
 <h4>Rails:</h4>
 <h4>Ruby:</h4>
 <ul>
-	<li><a href="ruby">Geometric shapes suspended by balloons</a></li>
+	<li><a href="ruby/sudoku_solver">Sudoku Solver</a></li>
 </ul>
 
 <h4>JavaScript:</h4>
@@ -30,5 +30,5 @@
 
 <h4>Python:</h4>
 <ul>
-	<li><a href="python/caterpillar">Geometric shapes suspended by balloons</a></li>
+	<li><a href="python/caterpillar">Geometric shapes suspended by balloons.</a></li>
 </ul>

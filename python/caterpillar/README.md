@@ -2,4 +2,4 @@
 
 <p>This is my first coding project...ever. It's not great, but I sure had a lot of fun building it.</p>
 
-<img src="caterpillar.png" alt="Caterpillar" height="30%" width="30%">
+<img src="caterpillar.png" alt="Caterpillar" height="45%" width="45%">
