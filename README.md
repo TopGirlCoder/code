@@ -9,7 +9,7 @@
 <h3>Projects in Rails, Sinatra, Ruby, JavaScript, HTML5, CSS</h3>
 <h4>Rails:</h4>
 <ul>
-	<li><a href="rails/rails-online-shop-challenge">Online Store</a></li>
+	<li><a href="rails/online-shop">Online Store</a></li>
 </ul>
 
 <h4>Ruby:</h4>
