@@ -1,0 +1,11 @@
+<div class='container'>
+  <h3>Hello <%=@user.first_name %>!</h3>
+  <p>First name: <%= @user.first_name %></p></li>
+  <p>Last name: <%= @user.last_name %></p>
+  <p>Email: <%= @user.email %></p>
+
+  <% if current_user.admin? %>
+    <%= link_to 'Edit', edit_user_path(@user), class: 'button tiny radius' %>
+    <%= link_to 'Delete', user_path(@user), method: :delete, class: 'button tiny radius'  %>
+  <% end %>
+</div>

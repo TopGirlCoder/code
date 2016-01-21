@@ -1,0 +1,18 @@
+eunice:
+  name: "Eunice"
+  username: "euniceschoi"
+  email: "euniceschoi93@gmail.com"
+  password_digest: "1234567"
+  longitude: 122.0
+  latitude: 37.0
+  about_me: "Hello, I am a programmer looking for a workout partner"
+  gender: "female"
+chris:
+  name: "Chris"
+  username: "chdmark"
+  email: "chris@gmail.com"
+  password_digest: "1234567"
+  longitude: 123.0
+  latitude: 35.0
+  about_me: "Hello, I am a programmer looking for a gym buddy!"
+  gender: "male"

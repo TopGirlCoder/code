@@ -1,0 +1,209 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
+ * li{
+ 	list-style-type: none;
+ }
+
+body {
+ 	background-color: #d7e3e3;
+ }
+
+.innards {
+	margin: 0px auto;
+	width: 900px;
+	height: auto;
+	background-color: rgba(255, 255, 255, .8);
+	padding: 30px 50px 50px 50px;
+	-webkit-box-shadow: 7px 8px 18px 0px rgba(12, 85, 98, .2);
+  -moz-box-shadow:    7px 8px 18px 0px rgba(12, 85, 98, .2);
+  box-shadow:         7px 8px 18px 0px rgba(12, 85, 98, .2);
+  margin-bottom: 75px;
+
+}
+
+.innards-left {
+	height: auto;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+#home-nav-bar a{
+	font-family: 'Yanone Kaffeesatz';
+  font-weight: 400;
+	margin-left: 10px;
+  font-size: 2em;
+}
+
+nav.top-bar{
+	background-color: #dc854f;
+	margin-bottom: 10px;
+
+}
+
+.top-bar-section ul li a{
+	font-size: 1em;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover{
+	background-color: #dc854f;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  background-color: #dc854f;
+}
+
+.top-bar-section .dropdown li:hover:not(.has-form):not(.active) > a:not(.button){
+	 background-color: #dc854f;
+}
+
+.top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button){
+	 background-color: black;
+}
+
+
+.map-show{
+	width: 100px;
+}
+
+/*#map{
+	display: none;
+}*/
+
+#geolocate{
+	float: left;
+}
+
+
+.myButton {
+  -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+  background:-moz-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:-webkit-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:-o-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:-ms-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:linear-gradient(to bottom, #1a849c 5%, #3899af 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a849c', endColorstr='#3899af',GradientType=0);
+  background-color:#768d87;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:1px solid #3899af;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:11px 23px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+  float: right;
+}
+.myButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+  background:-moz-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:-webkit-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:-o-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:-ms-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:linear-gradient(to bottom, #1a849c 5%, #5daabb 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a849c', endColorstr='#768d87',GradientType=0);
+  background-color:#1a849c;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+
+.mySmallButton {
+  -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #768d87), color-stop(1, #6c7c7c));
+  background:-moz-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:-webkit-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:-o-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:-ms-linear-gradient(top, #1a849c 5%, #3899af 100%);
+  background:linear-gradient(to bottom, #1a849c 5%, #3899af 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a849c', endColorstr='#3899af',GradientType=0);
+  background-color:#768d87;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+  border:1px solid #3899af;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:1px 12px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+  float: right;
+}
+.mySmallButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #6c7c7c), color-stop(1, #768d87));
+  background:-moz-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:-webkit-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:-o-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:-ms-linear-gradient(top, #1a849c 5%, #5daabb 100%);
+  background:linear-gradient(to bottom, #1a849c 5%, #5daabb 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1a849c', endColorstr='#768d87',GradientType=0);
+  background-color:#1a849c;
+}
+.mySmallButton:active {
+  position:relative;
+  top:1px;
+}
+
+
+#recommendation-box {
+  display:none;
+}
+
+
+.popup {
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

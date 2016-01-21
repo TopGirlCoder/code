@@ -1,0 +1,177 @@
+
+<%= render 'layouts/navigation' %>
+  <div class="row">
+    <div class="large-4 columns" style="text-align: left">
+      <img class="profile-image" src="<%=@user.attachment%>">
+    </div>
+    <div class="large-8 columns">
+    <%= flash[:error] %>
+      <% if @user == current_user  %>
+        <p id="user-show-header">Hello <%= @user.name %>!</p>
+        <p id="user-show-header-2"> What goals will you vanquish today?<p>
+      <% else %>
+        <p id="user-show-header"><%= @user.name %></p>
+      <% end %>
+        <div class="row">
+          <ul class="large-block-grid-4" id="user-badges">
+
+
+            <% if current_user %>
+              <% if @accountabuddy_relationship == true %>
+               <% @badges.order(:id).each do |badge| %>
+                  <li> <img class="badge-image" src="<%= asset_path(badge.badge_image_link) %>">
+                  <p> <%= badge.points %> victories</p>
+                      <%= link_to "Endorse!", badge_path(badge.id), method: 'put', class: "endorse-link" %>
+                  </li>
+                <% end %>
+              <% elsif @inverse_accountabuddy_relationship %>
+                   <% @badges.order(:id).each do |badge| %>
+                  <li> <img class="badge-image" src="<%= asset_path(badge.badge_image_link) %>">
+                  <p> <%= badge.points %> victories</p>
+                      <%= link_to "Endorse!", badge_path(badge.id), method: 'put', class: "endorse-link" %>
+                  </li>
+                <% end %>
+              <% else %>
+                <% @badges.order(:id).each do |badge| %>
+                  <li> <img class="badge-image" src="<%= asset_path(badge.badge_image_link) %>">
+                  <p> <%= badge.points %> victories</p>
+                  </li>
+                <% end %>
+              <% end %>
+            <% end %>
+          </ul>
+        </div>
+    </div>
+  </div>
+<div class="innards">
+
+<div class="row">
+  <div id="user-show-about" class="large-7 columns">
+
+            <div class="quote">
+              <span id="speech-mark-left">&ldquo;</span>
+              <%= @user.about_me %>
+              <span id="speech-mark-right">&rdquo;</span>
+            </div>
+
+  </div>
+  <div id="user-show-categories" class="large-5 columns">
+      <% if @user == current_user  %>
+      <p id="user-show-categories-current">Current goals:</p>
+      <% @user_categories.each do |category| %>
+       <%= link_to category.category.name, category_path(category.category.id) %>
+
+      <% end %>
+      <p id="user-show-categories-new"><%= link_to "Start a new goal", categories_path %></p>
+
+      <% end %>
+  </div>
+</div>
+<div id="user-show-praise-container" class="row">
+  <div id="user-show-praise" class="large-12 columns">
+        <h3>Recommendations</h3>
+     <div class="row">
+      <div class="large-2 columns">
+      </div>
+      <div class="large-10 columns">
+
+        <table style="border-style:none" id="recommendation-append">
+            <% @recommendations.each do |recommendation| %>
+          <tr >
+              <td style="float:left"><img  src="<%= recommendation.user.attachment%>"></td>
+              <td style="width:80%">
+                <div id="recommendation-text">
+                  "<%= recommendation.body %>"
+                  <br>
+                  - <%= recommendation.user.name %>
+                </div>
+              </td>
+          </tr>
+
+            <% end %>
+        </table>
+
+          <% if current_user %>
+            <% if @accountabuddy_relationship || @inverse_accountabuddy_relationship %>
+            <%= link_to "Write a Recommendation!", recommendations_path, id: "recommendation-link" %>
+              <div id="recommendation-box">
+                Your Recommendation:
+                <%= form_for :recommendation, url: '/recommendations', id: "recommendation-form" do |f| %>
+                <%= f.text_field :body %>
+                <%= f.hidden_field :recipient_id, value: @user.id %>
+                <%= f.button "Submit", :class => "myButton" %>
+                <% end %>
+              </div>
+            <% end %>
+          <% end %>
+      </div>
+     </div>
+    <p>
+  </div>
+</div>
+<% if @user == current_user %>
+  <div class="row">
+    <div id="user-show-friends" class="large-5 columns">
+
+      <h2>Your Friends</h2>
+        <ul>
+          <% @just_friends.each do |friendship| %>
+              <%= link_to friendship_path(friendship.id) do%>
+                 <li><%= friendship.friend.name %> : <%=friendship.category.name %></li>
+              <% end %>
+          <% end %>
+        </ul>
+        <div class="row">
+          <div class="large-12 columns">
+             <p class="pending-sent">Pending Friend Requests You've Sent</p>
+            <ul>
+              <% @pending_requests.each do |pending_request| %>
+               <li><%= pending_request.recipient.name %></li>
+              <% end %>
+            </ul>
+            <div class="large-12 columns">
+              <p class="pending-sent">Friend Requests Awaiting Your Approval</p>
+                  <% @friend_requests.each do |friend_request| %>
+                    <ul>
+                    <li><%= friend_request.user.name %></li>
+                      <%= form_tag friend_request_path(friend_request.id), method: 'put' do %>
+                      <%= submit_tag "Accept", :class => "mySmallButton" %>
+                    <% end %>
+                  <% end %>
+                  </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+    <div id="user-show-accountabuddies" class="large-7 columns">
+
+    <h2>Your AccountaBuddies </h2>
+      <ul>
+        <% @accountabuddies.each do |accountabuddy| %>
+              <%= link_to friendship_path(accountabuddy.id) do%>
+                <li><%= accountabuddy.friend.name %>: <%= accountabuddy.category.name %></li>
+              <% end %>
+        <% end %>
+      </ul>
+      <ul>
+        <p> AccountaBuddy Requests Awaiting Your Approval</p>
+        <% if @accountabuddy_requests %>
+              <% @accountabuddy_requests.each do |request| %>
+
+                <% if request.friendship.accountabuddy == true %>
+                <% else %>
+                  <% if request.user.id == current_user.id %>
+                  <% else %>
+                    <li><%= request.user.name %></li>
+                      <%= form_tag accountabuddy_request_path(request.id), method: 'put' do %>
+                      <span><%= submit_tag "Accept", :class => "mySmallButton" %></span>
+                      <% end %>
+                    <% end %>
+                <% end %>
+              <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+</div>

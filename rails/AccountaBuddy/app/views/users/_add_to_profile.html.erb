@@ -1,0 +1,89 @@
+<h1 style="font-size:4em">Add to Your Profile</h1>
+
+    <%= flash[:error] %>
+
+
+      <div class="row">
+
+        <div id="user-signedit-form" class="large-12">
+          <%= form_for :user, method: :put, url: user_path(current_user.id) do |f| %>
+
+            <div class="row">
+              <div class="large-8 columns"><%= f.hidden_field :name, value: current_user.name %>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-8 columns"><%= f.hidden_field :username, value: current_user.name %>
+              </div>
+            </div>
+
+             <div class="row">
+              <div class="large-8 columns"><%= f.hidden_field :email, value: current_user.email %>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right">Upload Profile Picture</label>
+              </div>
+              <div class="large-8 columns"><%= f.file_field :attachment %>
+              </div>
+            </div>
+            
+
+             <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right">Tell us about your goals: </label>
+              </div>
+              <div class="large-8 columns">
+            <div id="new-user-description"><%= f.text_area :about_me %></div>
+              </div>
+            </div>
+
+             <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right">Gender:</label>
+              </div>
+              <div class="large-8 columns"><%= f.select :gender, ['Female', 'Male']%>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right">Latitude:</label>
+              </div>
+              <div class="large-8 columns" id="latitude-fill"><%= f.text_field :latitude %>
+              </div>
+            </div>
+
+             <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right">Longitude:</label>
+              </div>
+              <div class="large-8 columns" id="longitude-fill"><%= f.text_field :longitude %>
+              </div>
+            </div>         
+
+             <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right"></label>
+              </div>
+              <div class="large-8 columns" id="longitude-fill"><%= render 'map_show' %>
+              </div>
+            </div>             
+
+
+             <div class="row">
+              <div class="large-8 columns"><%= f.hidden_field :password, value: current_user.password %>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-4 columns"><label for="right-label" class="right"></label>
+              </div>
+              <div class="large-8 columns"> <%= f.hidden_field :password_confirmation, value: current_user.password %>
+              </div>
+            </div>
+
+
+            <%= f.submit "Add", :class => "myButton" %>
+        
+
+          <% end %>
+        </div>
+      </div>
