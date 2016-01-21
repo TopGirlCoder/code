@@ -19,6 +19,7 @@ GitHub: https://github.com/TopGirlCoder/code</p>
 <ul>
 	<li><a href="ruby/sudoku">Sudoku Solver</a></li>
 	<li><a href="ruby/fibonacci">Fibonacci Sequence</a></li>
+	<li><a href="ruby/pig-latin">Pig Latin</a></li>
 </ul>
 
 <h3>JavaScript:</h3>
