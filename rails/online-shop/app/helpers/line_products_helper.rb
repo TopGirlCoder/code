@@ -1,2 +1,0 @@
-module LineProductsHelper
-end

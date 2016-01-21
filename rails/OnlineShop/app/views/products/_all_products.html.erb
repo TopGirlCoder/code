@@ -1,0 +1,40 @@
+<% if current_user && current_user.admin?%>
+  <h1>Hello </h1>
+  <h1>Product List</h1>
+  <table>
+    <tr>
+      <th class='small-2 '>Title</th>
+      <th class='small-3 '>Description</th>
+      <th class='small-1 '>Image Url</th>
+      <th class='small-1 '>Price</th>
+      <th class='small-1 '>Quantity</th>
+      <th class='small-1 '></th>
+      <th class='small-1 '></th>
+    </tr>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= link_to product.title, product_path(product) %></td>
+        <td><%= product.description %></td>
+        <td><%= image_tag(product.image_url) %></td>
+        <td><%= number_to_currency(product.price) %></td>
+        <td><%= product.quantity %></td>
+        <td><%= link_to 'Edit', edit_product_path(product) %></td>
+        <td><%= link_to 'Delete', product_path(product), method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+
+<!-- Not logged in view of 'All the Products' -->
+<% else %>
+  <div class="row">
+    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+      <% @products.each do |product| %>
+        <li id="pictures" class="small-3 columns">
+          <%= image_tag(product.image_url, class:"thumbnail", alt:"") %>
+          <%= product.title %> <%= number_to_currency(product.price) %>
+          <%= button_to 'Add to Cart', line_products_path(product_id: product), class: 'button tiny radius' %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
