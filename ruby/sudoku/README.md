@@ -2,7 +2,7 @@
 
 <p>A Sudoku solver that can run from the command line given a string of numbers will print the solution in the terminal. The code first checks for solutions in the rows and columns, and then the 3x3 boxes. (See image below). </p>
 
-<p>My role: I built sudoku.rb</p>
+<p>Technologies: Ruby</p>
 
 <p>Sample string:</p>
 <p>"1-58-2----9--764-52--4--819-19--73-6762-83-9-----61-5---76---3-43--2-5-16--3-89--"</p>

@@ -2,4 +2,4 @@
 
 <p>Array Bag implements a variable-sized array bag to work with an existing interface.</p>
 
-<p>My role: I built ArrayBag.java</p>
+<p>Technologies: Java</p>
