@@ -4,4 +4,4 @@
 
 <p>Technologies: Ruby</p>
 
-<img src="fibonacci.png" alt="Fibonacci Sequence" height="45%" width="45%">
+<img src="fibonacci.jpg" alt="Fibonacci Sequence" height="45%" width="45%">
