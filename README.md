@@ -27,6 +27,11 @@ GitHub: https://github.com/TopGirlCoder/code</p>
 	<li><a href="javaScript/magician">Guess the Magician's Card</a></li>
 </ul>
 
+<h3>XHR (Ajax):</h3>
+<ul>
+	<li><a href="ajax/ajax-request">XHR (Ajax) Requests</a></li>
+</ul>
+
 <h3>Java:</h3>
 <ul>
 	<li><a href="java/ArrayBag">Array Bag implements a variable-sized array bag to work with an existing interface</a></li>
