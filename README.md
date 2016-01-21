@@ -1,13 +1,13 @@
 <h1>code</h1>
  
-<p>Tanya Lindermeier<br>
-Email: topgirlcoder (at) gmail(dot)com<br>
+<p style="text-align: center"><b>Tanya Lindermeier</b><br>
+Email: topgirlcoder (at) gmail (dot) com<br>
 Linkedin: www.linkedin.com/in/topgirlcoder<br> 
 GitHub: https://github.com/TopGirlCoder/code</p>
 
 <p>Tanya is a Ruby Developer looking to join a team creating amazing products at an innovation-led, technology-driven company.  Recent graduate of Dev Bootcamp in San Francisco with two years of strong CS fundamentals at the University of Colorado (3.85 GPA).</p> 
 
-<h2>Projects utilizing Rails, Sinatra, Ruby, JavaScript, Java, C++, Python</h2><br> 
+<h2>Recent Code Projects:</h2>
 
 <h3>Rails:</h3>
 <ul>
