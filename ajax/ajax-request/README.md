@@ -5,5 +5,5 @@
 <p>Technologies: Ajax, JavaScript, jQuery, JSON, Ruby, Rails.</p>
 
 <p>A typical XHR request:</p>
-<img src="ajax-request.jpg" alt="XHR Request" height="45%" width="60%">
+<img src="ajax-request.JPG" alt="XHR Request" height="45%" width="60%">
 
