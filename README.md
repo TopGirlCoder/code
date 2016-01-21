@@ -32,9 +32,9 @@ GitHub: https://github.com/TopGirlCoder/code</p>
 
 <h3>C++:</h3>
 <ul>
-	<li><a href="cPlusPlus/DoublyLinkedList">Doubly linked list polynomial</a></li>
-	<li><a href="cPlusPlus/BinarySearchTreeBag">Binary search tree and recursive algorithms for processing items</a></li>	
-	<li><a href="cPlusPlus/BigNum">BigNum to circumvent the limit of how large an integer one can represent with C++'s primitive types</a></li>
+	<li><a href="c++/DoublyLinkedList">Doubly linked list polynomial</a></li>
+	<li><a href="c++/BinarySearchTreeBag">Binary search tree and recursive algorithms for processing items</a></li>	
+	<li><a href="c++/BigNum">BigNum to circumvent the limit of how large an integer one can represent with C++'s primitive types</a></li>
 </ul>
 
 <h3>Python:</h3>
