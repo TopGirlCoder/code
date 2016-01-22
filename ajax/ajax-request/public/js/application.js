@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // display the die when the page loads
   var dieHtml = '<div class="die" style="display:none">'
   dieHtml += '<span class="roll">'
   dieHtml += -1
@@ -6,11 +7,7 @@ $(document).ready(function () {
   dieHtml += '</div>'
   $('form').append(dieHtml);
 
-  //   1- intercept the form submission event using jQuery
-  //   2- prevent the default action for that event from happening
-  //   3- use jQuery to submit an AJAX post to the form's action
-  //   4- when the AJAX post is done, display the new die roll using jQuery
-  //   5- the die shows a random number between 1 and #of sides
+  // Update the database with die roll, asynchronously update the result on the die  
   $('form').on('submit',function(e){
     e.preventDefault();
 
