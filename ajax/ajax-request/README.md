@@ -13,7 +13,7 @@
 
 <h3>From a coders perspective, explain an XHR (AJAX) request:</h3>
 
-<p>In a nutshell, an XHR (AJAX) request stops the web page from making a call to the server (without an XHR request the call would go to the server, causing the entire web page to be reloaded). The XHR request is handled - either data is sent to the controller to be stored in the database, or data is retrieved by the controller from the database to render on the web page. Finally, part of the web page is updated asynchronously.</p>
+<p>In a nutshell, an XHR (AJAX) request stops the web page from making a call to the server (without an XHR request the call would go to the server, causing the entire web page to be reloaded). The XHR request is handled asynchronously - either data is sent to the controller to be stored in the database, or data is retrieved by the controller from the database to render on the web page. Finally, if data is being retrieved from the database, then the data gets rendered on the web page.</p>
 
 <h3>Flow of an XHR (AJAX) request:</h3>
 
