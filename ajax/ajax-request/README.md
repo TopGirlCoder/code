@@ -31,7 +31,9 @@ Web page <- JS (response) <- Controller <- Database </p>
 
 <p>In this short example, a User clicks a submit button on a web page to see all of entries stored in the database. The entries are displayed on the web page asynchronously.</p>
 
-<p>application.js</p>
+<p>application.js <br>
+<i>Omit 'data:' and 'dataType:' unless using 'type: 'POST''.</i></p>
+
 <pre><code>
 $(document).ready(function(){
   $("form").submit(function(event){
