@@ -23,7 +23,13 @@
 	<li>Depending on the request to a 'GET' or 'POST' route, the response is sent back from the controller to the XHR request. The web page then gets updated asynchronously.</li>
 </ol>
 
-<p>Anatomy of an XHR (AJAX) request. In this short example, a User clicks on a submit button on a web page to see all of entries stored in the database. The web page does not refresh, and all of the entries are shown on the page when the User clicks submit.</p>
+<h3>Anatomy of an XHR (AJAX) request.</h3> 
+
+<p>In this short example, a User clicks on a submit button on a web page to see all of entries stored in the database. The web page does not refresh, and all of the entries are shown on the page when the User clicks submit.</p>
+
+<p>Web page -> JS (XHR request) -> Controller -> Database <br>
+Web page <- JS (response) <- Controller <- Database </p>
+
 <pre><code>
 <i>application.js</i>
 //execute after the page has loaded.
@@ -58,11 +64,6 @@ get '/entries' do
   end
 end 
 
-<i>entries/index.html.erb</i>
-<div>
-  <span id="all-entries">
-  </span>
-</div>
 </code></pre> 
 
 <p>A typical XHR get request:</p>
