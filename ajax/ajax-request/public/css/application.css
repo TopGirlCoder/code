@@ -29,3 +29,30 @@ a#roll {
   padding: 20px;
   background-color: orange;
 }
+
+pre>code {
+  line-height: 2em;
+  font-size: 1em;
+  border: none; 
+}
+code {
+  line-height: 2em;
+  font-family: monospace;
+  color: #666666;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 2px 4px;
+  font-size: .9em;
+}
+
+pre {
+  background-color: #f8f8f8;
+  padding: 8px 8px;
+  font-size: 1em;
+  font-weight: 100;
+  overflow: auto;
+  margin: 1em inherit;
+  word-wrap: auto; 
+  border: 1px solid #ddd;
+  color: #666666;
+}
