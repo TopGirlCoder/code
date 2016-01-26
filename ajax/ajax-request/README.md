@@ -5,13 +5,13 @@
 
 <p>Technologies: AJAX, JavaScript, jQuery, JSON</p>
 
-<h3>In a nutshell, an XHR (AJAX) request explained:</h3>
+<h3>An XHR (AJAX) request in a nutshell</h3>
 
 <p>In a nutshell, an XHR (AJAX) request stops a web page from making a call to the server. Without an XHR request, the call would go to the server causing the entire web page to be reloaded. Instead an XHR request may update only part of the web page. This enables other scripts to run at the same time, without the web page slowing down due to having to reload the entire page. An XHR request is handled asynchronously - either data is sent to the controller to be stored in the database, or data is retrieved by the controller from the database and may get rendered on part of the web page.</p>
 
 <p>Examples of applications using XHR (AJAX) requests include the vote buttons on Stack Overflow, infinite scrolling and posting on Facebook, email on Gmail, and more!
 
-<h3>In more technical terms, an XHR (AJAX) request explained:</h3>
+<h3>Diving deeper into an XHR (AJAX) request</h3>
 
 <ol>
 	<li>An html page has a function bound to an event.</li> 
@@ -20,12 +20,12 @@
 	<li>Depending on the request to a 'GET' or 'POST' route, the response is sent back from the controller to the XHR request. The web page then gets updated asynchronously.</li>
 </ol>
 
-<h3>Flow of an XHR (AJAX) request:</h3>
+<h3>Flow of an XHR (AJAX) request</h3>
 
 <p>Web page -> JS (request) -> Controller -> Database <br>
 Web page <- JS (response) <- Controller <- Database </p>
 
-<h3>Anatomy of an XHR (AJAX) request:</h3> 
+<h3>Anatomy of an XHR (AJAX) request</h3> 
 
 <p>In this short example, a User clicks a submit button on a web page to see all of entries stored in the database. The entries are displayed on the web page asynchronously.</p>
 
@@ -60,24 +60,18 @@ get '/entries' do
 end 
 </code></pre> 
 
-
 <p>views/index.rb</p>
-<pre><code>
- <xmp>
+<pre><code><xmp>
  <div>
    <span id=all-entries></span>
  </div> 
- </xmp> 
-</code></pre> 
+ </xmp></code></pre> 
 
-
-
-<h3>Detailed explanation of an XHR (AJAX) request.</h3>
+<h3>Step-by-step XHR (AJAX) request</h3>
 
 <p>In the application.js file</p>
 
 <p>Execute when the web page has loaded:</p>
-
 <pre><code>
   $(document).ready(function(){
 </code></pre>
@@ -127,6 +121,6 @@ end
   ("span #all-entries").text(response)
 </code></pre> 
       
-<p>A typical XHR get request:</p>
+<p>A typical XHR get request</p>
 <img src="ajax-request.JPG" alt="XHR Request" height="45%" width="60%">
 
