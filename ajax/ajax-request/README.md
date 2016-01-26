@@ -63,9 +63,11 @@ end
 
 <p>views/index.rb</p>
 <pre><code>
+ <xmp>
  <div>
    <span id=all-entries></span>
- </div>  
+ </div> 
+ </xmp> 
 </code></pre> 
 
 
