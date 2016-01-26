@@ -7,6 +7,12 @@ GitHub: https://github.com/TopGirlCoder/code</p>
 
 <p>Tanya is a Ruby Developer looking to join a team creating amazing products at an innovation-led, technology-driven company.  Recent graduate of Dev Bootcamp in San Francisco with two years of strong CS fundamentals at the University of Colorado (3.85 GPA).</p> 
 
+<h2>Guides:</h2>
+<ul>
+	<li><a href="ajax/ajax-request">XHR (Ajax) Requests</a></li>
+	<li><a href="guides/webFrameworks">Web Application Frameworks</a></li>
+</ul>
+
 <h2>Recent Code Projects:</h2>
 
 <h3>Rails:</h3>
@@ -29,7 +35,7 @@ GitHub: https://github.com/TopGirlCoder/code</p>
 
 <h3>XHR (Ajax):</h3>
 <ul>
-	<li><a href="ajax/ajax-request">XHR (Ajax) Requests</a></li>
+	<li><a href="ajax/ajax-request">XHR (Ajax) Requests: Updating a Dice</a></li>
 </ul>
 
 <h3>Java:</h3>
