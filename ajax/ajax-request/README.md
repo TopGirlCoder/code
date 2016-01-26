@@ -3,36 +3,33 @@
 
 <p>A description of how a typical XHR (AJAX) request works including the various systems involved, what they do, and how they interact. AJAX is an acronym for Asynchronous JavaScript and XML.</p>
 
-<p>Technologies: AJAX, JavaScript, jQuery, JSON, Ruby, Sinatra.</p>
+<p>Technologies: AJAX, JavaScript, jQuery, JSON</p>
 
-<h3>From a Users perspective, explain an XHR (AJAX) request:</h3>
+<h3>In a nutshell, an XHR (AJAX) request explained:</h3>
 
-<p>When a User clicks or scrolls on a webpage, an XHR request prevents the whole web page from reloading. Instead only part of the web page is updated asynchronously. This enables other scripts to run at the same time, without the web page slowing down due to having to reload the entire page.</p> 
+<p>In a nutshell, an XHR (AJAX) request stops a web page from making a call to the server. Without an XHR request, the call would go to the server causing the entire web page to be reloaded. Instead an XHR request may update only part of the web page. This enables other scripts to run at the same time, without the web page slowing down due to having to reload the entire page. An XHR request is handled asynchronously - either data is sent to the controller to be stored in the database, or data is retrieved by the controller from the database and may get rendered on part of the web page.</p>
 
-<p>Examples of applications using XHR (AJAX) requests include the vote buttons on Stack Overflow, asynchronous scrolling and posting on Facebook, asynchronous email on Gmail, and more!
+<p>Examples of applications using XHR (AJAX) requests include the vote buttons on Stack Overflow, infinite scrolling and posting on Facebook, email on Gmail, and more!
 
-<h3>From a coders perspective, explain an XHR (AJAX) request:</h3>
-
-<p>In a nutshell, an XHR (AJAX) request stops the web page from making a call to the server (without an XHR request the call would go to the server, causing the entire web page to be reloaded). The XHR request is handled asynchronously - either data is sent to the controller to be stored in the database, or data is retrieved by the controller from the database to render on the web page. Finally, if data is being retrieved from the database, then the data gets rendered on the web page.</p>
-
-<h3>Flow of an XHR (AJAX) request:</h3>
-
-<p>Web page -> JS (XHR request) -> Controller -> Database <br>
-Web page <- JS (response) <- Controller <- Database </p>
+<h3>In more technical terms, an XHR (AJAX) request explained:</h3>
 
 <ol>
-	<li>A web page has a function bound to an event. The event could be when a User clicks a button, triggering the event.</li> 
-	<li>A User clicks a button on a form, triggering an event. Normally the event goes to the server and the web page gets refreshed. However, with an XHR request, an event handler that heard the click prevents the request from going to the server and the page is prevented from refreshing.</li>
+	<li>An html page has a function bound to an event.</li> 
+	<li>A User clicks a button on a form, triggering an event. Normally an event goes to the server and the web page gets refreshed. However, with an XHR request, an event handler that heard the click prevents the request from going to the server and the page is prevented from refreshing.</li>
 	<li>The XHR request directs to the controller, carrying the data from the form. A 'GET' route retrieves data from the database, and a 'POST' route makes changes (creates, updates, deletes) to data in the database.</li>
 	<li>Depending on the request to a 'GET' or 'POST' route, the response is sent back from the controller to the XHR request. The web page then gets updated asynchronously.</li>
 </ol>
 
-<h3>Anatomy of an XHR (AJAX) request.</h3> 
+<h3>Flow of an XHR (AJAX) request:</h3>
+
+<p>Web page -> JS (request) -> Controller -> Database <br>
+Web page <- JS (response) <- Controller <- Database </p>
+
+<h3>Anatomy of an XHR (AJAX) request:</h3> 
 
 <p>In this short example, a User clicks a submit button on a web page to see all of entries stored in the database. The entries are displayed on the web page asynchronously.</p>
 
 <p>application.js <br>
-<i>Omit 'data:' and 'dataType:' unless using 'type: 'POST''.</i></p>
 
 <pre><code>
 $(document).ready(function(){
@@ -41,16 +38,17 @@ $(document).ready(function(){
     $.ajax({
       type: 'GET',
       url: '/entries',
-      data: $(this).serialize,  
-      dataType: 'json' 
+      //data: $(this).serialize,  
+      //dataType: 'json' 
     }).done(function(response){
       ("span #all-entries").text(response)
     });
   });
 });
 </code></pre> 
+<i>Omit 'data:' and 'dataType:' unless using 'type: 'POST''.</i></p>
 
-<p>controller/index.rb</p>
+<p>controllers/index.rb</p>
 <pre><code>
 get '/entries' do
   @entries = Entry.all
@@ -61,6 +59,16 @@ get '/entries' do
   end
 end 
 </code></pre> 
+
+
+<p>views/index.rb</p>
+<pre><code>
+ <div>
+   <span id=all-entries></span>
+ </div>  
+</code></pre> 
+
+
 
 <h3>Detailed explanation of an XHR (AJAX) request.</h3>
 
@@ -97,7 +105,7 @@ end
   url: '/entries',
 </code></pre>
 
-<p>If we were making a 'POST' request, here we would serialize form data to a query string (OMIT if making a 'GET' request. It should be omitted in this example because we're making a 'GET' request):</p>
+<p>If we were making a 'POST' request, here we would serialize form data to a query string (OMIT if making a 'GET' request. It should be omitted in this example because we are making a 'GET' request):</p>
 <pre><code>
   data: $(this).serialize,
 </code></pre>
