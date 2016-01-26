@@ -35,7 +35,7 @@ GitHub: https://github.com/TopGirlCoder/code</p>
 
 <h3>XHR (Ajax):</h3>
 <ul>
-	<li><a href="ajax/ajax-request">XHR (Ajax) Requests: Updating a Dice</a></li>
+	<li><a href="ajax/ajax-request">XHR (Ajax) Requests: Updating Dice</a></li>
 </ul>
 
 <h3>Java:</h3>
