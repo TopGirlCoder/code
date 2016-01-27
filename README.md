@@ -1,6 +1,6 @@
 <h1>code</h1>
  
-<p style="text-align: center"><b>Tanya Lindermeier</b><br>
+<p><b>Tanya Lindermeier</b><br>
 Email: topgirlcoder (at) gmail (dot) com<br>
 Linkedin: www.linkedin.com/in/topgirlcoder<br> 
 GitHub: https://github.com/TopGirlCoder/code</p>
