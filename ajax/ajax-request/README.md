@@ -46,7 +46,7 @@ $(document).ready(function(){
   });
 });
 </code></pre> 
-<i>Omit 'data:' and 'dataType:' unless using 'type: 'POST''.</i></p>
+<i>If using a post request, 'type: 'POST'', include 'data:' and 'dataType:'. Otherwise omit these.</i></p>
 
 <p>controllers/index.rb</p>
 <pre><code>
