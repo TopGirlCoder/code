@@ -9,7 +9,7 @@
 
 <p>In a nutshell, an XHR (AJAX) request stops a web page from making a call to the server. Without an XHR request, the call would go to the server causing the entire web page to be reloaded. Instead an XHR request may update only part of the web page. This enables other scripts to run at the same time, without the web page slowing down due to having to reload the entire page. An XHR request is handled asynchronously - either data is sent to the controller to be stored in the database, or data is retrieved by the controller from the database and may get rendered on part of the web page.</p>
 
-<p>Examples of applications using XHR (AJAX) requests include the vote buttons on Stack Overflow, infinite scrolling and posting on Facebook, email on Gmail, and more!
+<p>Examples of applications using XHR (AJAX) requests include the vote buttons on Stack Overflow, infinite scrolling and posting on Facebook, email on Gmail, and more!</p>
 
 <h3>Diving deeper into an XHR (AJAX) request</h3>
 
@@ -37,9 +37,7 @@ $(document).ready(function(){
     event.preventDefault();
     $.ajax({
       type: 'GET',
-      url: '/entries',
-      //data: $(this).serialize,  
-      //dataType: 'json' 
+      url: '/entries', 
     }).done(function(response){
       ("span #all-entries").text(response)
     });
